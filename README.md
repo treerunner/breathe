@@ -1,4 +1,4 @@
 # Allentown Breathes
 
-Advocacy webesite.
+Advocacy website.
 
