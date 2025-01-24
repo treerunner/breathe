@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.74 109.11">
+  <circle cx="44.87" cy="104.87" r="4.24"/>
+  <circle cx="44.87" cy="77.72" r="4.24"/>
+  <g>
+    <circle cx="59.49" cy="90.72" r="4.24"/>
+    <circle cx="72.5" cy="77.72" r="4.24"/>
+    <circle cx="85.5" cy="64.72" r="4.24"/>
+  </g>
+  <circle cx="44.87" cy="56.58" r="5.66"/>
+  <circle cx="44.87" cy="32.53" r="7.07"/>
+  <circle cx="44.87" cy="8.49" r="8.49"/>
+  <g>
+    <circle cx="30.25" cy="90.72" r="4.24"/>
+    <circle cx="17.25" cy="77.72" r="4.24"/>
+    <circle cx="4.24" cy="64.72" r="4.24"/>
+  </g>
+</svg>

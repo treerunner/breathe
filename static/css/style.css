@@ -1,0 +1,243 @@
+@import url('./grid.css');
+
+@media (prefers-reduced-motion) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* vars */
+:root {
+  --lighter-grey-color: #eaeae4;
+  --light-grey-color: #d7d7d3;
+  --grey-color: #a5a3a1;
+  --dark-grey-color: #373636;
+  --green-color: #5d7c36;
+  --blue-color: #006289;
+  --red-color: #901c55;
+  --black-color: #000000;
+  --base-font-size: 15px;
+  --fluid-typography-ratio: 0.6;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-leicht.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-leicht-kursiv.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-buch.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-buch-kursiv.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'soehne';
+    src: url('./font/soehne-halbfett.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-dreiviertelfett.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-dreiviertelfett-kursiv.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne';
+  src: url('./font/soehne-extraleicht.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'soehne mono';
+  src: url('./font/soehne-mono-halbfett.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*overflow-wrap: break-word;*/
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: var(--lighter-grey-color);
+  color: var(--black-color);
+  font-family: 'soehne', Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: var(--base-font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+#svelte,
+main {
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+body p {
+  line-height: 1.4em;
+  margin: 0 0 1.4em 0;
+}
+
+body p:last-child {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+h3 {
+  margin-bottom: 1em;
+}
+
+a.more:after {
+  font-size: 0.7em;
+  padding-left: 0.15em;
+  content: '\00a0\2192';
+}
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.standard-padding {
+  padding: 4em 3em;
+}
+
+::selection {
+  background: var(--black-color);
+  color: var(--lighter-grey-color);
+}
+
+@media (min-width: 48rem) and (max-width: 79.99rem) {
+
+}
+
+@media (min-width: 80rem) {
+
+}
+
+/*Font Sizing */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+@media (min-width: 48rem) and (max-width: 79.99rem) {
+  body {
+    font-size: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 0.9vw);
+  }
+}
+
+@media (min-width: 80rem) {
+  body {
+    font-size: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 17px);
+  }
+}
