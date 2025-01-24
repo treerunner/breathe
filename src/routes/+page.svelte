@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { gsap } from "gsap";
-	import {ScrollTrigger} from "gsap/dist/ScrollTrigger"; 
   import Logo from '$components/Logo.svelte';
   import Lung from '$components/Lung.svelte';
   import Plurality from '$components/Plurality.svelte';
