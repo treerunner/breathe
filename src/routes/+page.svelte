@@ -8,9 +8,7 @@
   let showheader: boolean;
   let headertext = '';
   const options = {threshold: '.1'};
-  const sectionoptions = {threshold: '.4'};
-  
-
+  const sectionoptions = {threshold: '.4'};  
 </script>
 
 <header class="showheader" class:showheader>
