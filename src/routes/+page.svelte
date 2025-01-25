@@ -190,21 +190,67 @@ on:inview_enter={(event) => {
 			</div>
 		</div>
 	</div>
+	<div class="spec-label">
+		In the Allentown Bethlehem Easton metro area, there is only one specialist for every 100,000 patients. 
+	</div>
 </div>
 
 	<div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
-	<h3>Access to Specialitsts</h3>
+	<h3>Risk Factor: Access to Specialitsts</h3>
 			<div class="two-column-text">
-				<p class="lede">TKTKTK 
+				<p class="lede">Living in an area where there are fewer specialists is frustrating for those who need care. Booking appointments months in advance, traveling long distances, and giving up altogether are common. Lack of access, and needing to take time in order to travel when appointments become available is a burden on personal finances and time, especially when frequent trips are needed, and especially when any additional cost rocks the balance of the household.</p>
 
-				<p>TKTK</p>
+				<p>Successful management of chronic respiratory health issues requires a team effort between the patient
+				and their health care providers. Someone with persistent asthma might need to be in the care of a specialist. Pulmonologists, allergists, and immunologists, for example, can provide specialized care for people with asthma and may have more experience
+				treating patients with severe asthma or allergic asthma than a primary care physician.</p>
+				
+				<p>Access to appropriate medical care is dependent upon different factors, including socioeconomic
+				status and insurance status. The lack of availability of nearby asthma specialists leads to poor asthma outcomes.</p>
+
+				<p>What can be done? Finding ways to bring care to the neighborhoods that need it is one way forward. Care teams that visit community centers, schools, assisted living facilities can help. Additionally, addressing healthcare infrastructure is hugely important and takes courage.</p>
 			</div>
 
 		</div>
 </div>
 
 </section>
+
+
+<section
+class="environment-holder"
+use:inview={sectionoptions}
+on:inview_enter={(event) => {
+      headertext = 'Living Environment';
+    }}
+>
+
+<div class="environment">
+	<div class="environment-shout standard-padding">
+		<h2>43%</h2>
+		<p>of housing stock has issues that contribute to poor health.
+	</div>
+</div>
+
+<div class="grid standard-padding no-gutter">
+	<div class="width-12-12-m width-12-12-i width-12-12">
+	<h3>Risk Factor: Housing Concerns</h3>
+			<div class="two-column-text">
+			<p class="lede">Much of the housing stock in the Allentown, Bethlehem and Easton metro area was developed for factory worker families of the early to mid 20th century. While it can be said that many of these houses were constructed with a pride of craft and longevity in mind, there are concerns related to old infrastructure. Leaks, poor or dirty ventilation, peeling paint, clunky old furnaces and oil burners all contribute to poor living conditions.</p>
+
+			<p>As houses age, insulation settles, and leaks develop, hidden spaces become susceptible to mold. For people with chronic conditions, triggers and allergens in the home (such as dust, pests, and mold) can cause asthma and allergy symptoms. Remediation and renovation is expensive work. For many, perhaps the best course of action is to address issues as they occur in rooms most used.</p>
+
+			<p>
+				What else can be done? Laws that encourage landlords to address housing issues that impact health is one way forward. Programs that aid and incentivize propoerty owners to make much needed repairs is another. Improving the living envirnonments of the places we inhabit is doable. It's worth looking to examples like DC Healthy Housing Collaborative (DCHHS), and California Asthma Financing Workgroup.
+			</p>
+			
+		</div>
+
+		</div>
+</div>
+
+</section>
+
 
 <style>
 
@@ -222,27 +268,21 @@ header {
   align-items: center;
 	}
 
-	header h3 {
-		font-weight: 600;
-		margin: 0;
-	}
-	
-	header.showheader {
-    	opacity: 0;
-	}
+header h3 {
+	font-weight: 600;
+	margin: 0;
+}
 
-  header a {
-  	margin-right: auto;
-  	display: block;
-  	width: 2rem;
-  	height: 2rem;
-  }
+header.showheader {
+  	opacity: 0;
+}
 
-  header img {
-  	display: block;
-  	width: 100%;
-  	height: auto;
-  }
+header a {
+	margin-right: auto;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+}
 
 .banner-section {
   height: 100vh;
@@ -338,8 +378,49 @@ p.lede {
 	width: calc(100vw - 4vw);
 }
 
+.spec-label {
+	margin-top: 1em;
+	margin-left: .5em;
+	font-weight: 500;
+}
+
 .tile {
 }
+
+
+.environment-holder {
+	
+}
+
+.environment {
+	background-color: var(--red-color);
+	background-image: url('/img/bethlehem-view.jpg');
+  background-size:cover;
+  background-position: center;
+	width: 100vw;
+	height: calc(100vh - 3rem);
+	align-content: center;
+}
+
+.environment-shout {
+	max-width: fit-content;
+  margin-inline: auto;
+  color: var(--light-grey-color);
+  text-align: center;
+  font-weight: 500;
+}
+
+.environment-shout h2 {
+	font-size: 10em;
+	line-height: .85em;
+	margin-bottom: .15em;
+	font-weight: 500;
+}
+
+.environment-shout p {
+	font-size: 1.5em;
+}
+
 
 .tile svg {
 	max-width: fit-content;
