@@ -247,7 +247,7 @@ header {
 .banner-section {
   height: 100vh;
   overflow-y: scroll;
-  background-image: url('../img/a-map.jpg');
+  background-image: url('/img/a-map.jpg');
   background-size:cover;
   background-position: center;
   padding: 3em;
@@ -257,7 +257,7 @@ header {
 
 .head {
 	padding-top: 7em;
-	background-image: url('../img/puff.svg');
+	background-image: url('/img/puff.svg');
 	background-repeat: no-repeat;
 	background-size: 8em 8em;
 	background-position: right .5em top .5em;
@@ -295,7 +295,7 @@ p.lede {
 
 .smoking {
 	background-color: var(--red-color);
-	background-image: url('../img/vaping-smoke.jpg');
+	background-image: url('/img/vaping-smoke.jpg');
   background-size:cover;
   background-position: center;
 	width: 100vw;
