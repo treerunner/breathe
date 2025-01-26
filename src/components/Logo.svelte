@@ -149,7 +149,7 @@
       }
 
   .logo-2 {
-    fill: #5c5a5b;
+    fill: var(--black-color);
     mix-blend-mode: multiply;
   }
 

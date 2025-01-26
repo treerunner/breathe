@@ -5,10 +5,25 @@
   import Plurality from '$components/Plurality.svelte';
   import Specialists from '$components/Specialists.svelte';
   import { inview } from 'svelte-inview';
+  import type { ObserverEventDetails, ScrollDirection, Options } from 'svelte-inview';
   let showheader: boolean;
+
+  let isInView: boolean;
+  let scrollDirection: ScrollDirection;
+  const puffoptions: Options = {
+    rootMargin: '-50px',
+    unobserveOnEnter: false,
+  };
+
+  const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
+    isInView = detail.inView;
+    scrollDirection = detail.scrollDirection.vertical;
+  };
+
   let headertext = '';
+  let headercolor = '';
   const options = {threshold: '.1'};
-  const sectionoptions = {threshold: '.4'};  
+  const sectionoptions = {threshold: '.3'};  
 </script>
 
 <header class="showheader" class:showheader>
@@ -17,7 +32,153 @@
   aria-label="Menu"
   href=''
   rel="noopener noreferrer"
-  > <Logo /></a>
+  >
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 235">
+  <g class="logo-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g>
+          <circle cx="117.1" cy="80.62" r="4.24"/>
+          <circle cx="119.86" cy="56.58" r="5.66"/>
+          <circle cx="127.58" cy="32.53" r="7.07"/>
+          <circle cx="139.17" cy="8.49" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="98.72" cy="85.76" r="4.24"/>
+          <circle cx="89.08" cy="63.56" r="5.66"/>
+          <circle cx="83.75" cy="38.87" r="7.07"/>
+          <circle cx="81.76" cy="12.26" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="85.37" cy="99.41" r="4.24"/>
+          <circle cx="65.92" cy="84.99" r="5.66"/>
+          <circle cx="48.96" cy="66.28" r="7.07"/>
+          <circle cx="33.93" cy="44.23" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="80.62" cy="117.9" r="4.24"/>
+          <circle cx="56.58" cy="115.14" r="5.66"/>
+          <circle cx="32.53" cy="107.42" r="7.07"/>
+          <circle cx="8.49" cy="95.83" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="85.76" cy="136.28" r="4.24"/>
+          <circle cx="63.56" cy="145.92" r="5.66"/>
+          <circle cx="38.87" cy="151.25" r="7.07"/>
+          <circle cx="12.26" cy="153.24" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="99.41" cy="149.63" r="4.24"/>
+          <circle cx="84.99" cy="169.08" r="5.66"/>
+          <circle cx="66.28" cy="186.04" r="7.07"/>
+          <circle cx="44.23" cy="201.07" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="117.9" cy="154.38" r="4.24"/>
+          <circle cx="115.14" cy="178.42" r="5.66"/>
+          <circle cx="107.42" cy="202.47" r="7.07"/>
+          <circle cx="95.83" cy="226.51" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="136.28" cy="149.24" r="4.24"/>
+          <circle cx="145.92" cy="171.44" r="5.66"/>
+          <circle cx="151.25" cy="196.13" r="7.07"/>
+          <circle cx="153.24" cy="222.74" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="149.63" cy="135.59" r="4.24"/>
+          <circle cx="169.08" cy="150.01" r="5.66"/>
+          <circle cx="186.04" cy="168.72" r="7.07"/>
+          <circle cx="201.07" cy="190.77" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="154.38" cy="117.1" r="4.24"/>
+          <circle cx="178.42" cy="119.86" r="5.66"/>
+          <circle cx="202.47" cy="127.58" r="7.07"/>
+          <circle cx="226.51" cy="139.17" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="149.24" cy="98.72" r="4.24"/>
+          <circle cx="171.44" cy="89.08" r="5.66"/>
+          <circle cx="196.13" cy="83.75" r="7.07"/>
+          <circle cx="222.74" cy="81.76" r="8.49"/>
+        </g>
+        <g>
+          <circle cx="135.59" cy="85.37" r="4.24"/>
+          <circle cx="150.01" cy="65.92" r="5.66"/>
+          <circle cx="168.72" cy="48.96" r="7.07"/>
+          <circle cx="190.77" cy="33.93" r="8.49"/>
+        </g>
+        <g>
+          <g>
+            <circle cx="104.74" cy="69.89" r="4.24"/>
+            <circle cx="103.85" cy="45.24" r="5.66"/>
+            <circle cx="108.28" cy="19.16" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="82.65" cy="82.65" r="4.24"/>
+            <circle cx="69.55" cy="61.75" r="5.66"/>
+            <circle cx="60.34" cy="36.94" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="69.89" cy="104.74" r="4.24"/>
+            <circle cx="48.09" cy="93.19" r="5.66"/>
+            <circle cx="27.72" cy="76.31" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="69.89" cy="130.26" r="4.24"/>
+            <circle cx="45.24" cy="131.15" r="5.66"/>
+            <circle cx="19.16" cy="126.72" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="82.65" cy="152.35" r="4.24"/>
+            <circle cx="61.75" cy="165.45" r="5.66"/>
+            <circle cx="36.94" cy="174.66" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="104.74" cy="165.11" r="4.24"/>
+            <circle cx="93.19" cy="186.91" r="5.66"/>
+            <circle cx="76.31" cy="207.28" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="130.26" cy="165.11" r="4.24"/>
+            <circle cx="131.15" cy="189.76" r="5.66"/>
+            <circle cx="126.72" cy="215.84" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="152.35" cy="152.35" r="4.24"/>
+            <circle cx="165.45" cy="173.25" r="5.66"/>
+            <circle cx="174.66" cy="198.06" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="165.11" cy="130.26" r="4.24"/>
+            <circle cx="186.91" cy="141.81" r="5.66"/>
+            <circle cx="207.28" cy="158.69" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="165.11" cy="104.74" r="4.24"/>
+            <circle cx="189.76" cy="103.85" r="5.66"/>
+            <circle cx="215.84" cy="108.28" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="152.35" cy="82.65" r="4.24"/>
+            <circle cx="173.25" cy="69.55" r="5.66"/>
+            <circle cx="198.06" cy="60.34" r="7.07"/>
+          </g>
+          <g>
+            <circle cx="130.26" cy="69.89" r="4.24"/>
+            <circle cx="141.81" cy="48.09" r="5.66"/>
+            <circle cx="158.69" cy="27.72" r="7.07"/>
+          </g>
+        </g>
+        <circle class="logo-2" fill="{headercolor}" cx="117.5" cy="117.5" r="26.68"/>
+      </g>
+    </g>
+  </g>
+</svg>
+
+	</a>
   <h3>{headertext}</h3>
 </header>
 
@@ -30,10 +191,15 @@
     }}
 >
 	<div class="head">
+			<div class="puff-holder" use:inview={puffoptions} on:inview_change={handleChange}>
+				<div
+      class:animate={isInView}
+      class:goingin={scrollDirection === 'down'}
+      class:goingout={scrollDirection === 'up'}>
+				<Logo />
+			</div>
+			</div>
 			<h1>Breathe,<br /> Allentown.</h1>
-	</div>
-	<div class="down">
-		<a href=""></a>
 	</div>
 </section>
 
@@ -42,6 +208,7 @@ class="introduction"
 use:inview={sectionoptions}
 on:inview_enter={(event) => {
       headertext = 'Introduction';
+      headercolor = 'var(--black-color)';
     }}
 >
 
@@ -70,6 +237,7 @@ class="smoking-holder"
 use:inview={sectionoptions}
 on:inview_enter={(event) => {
       headertext = 'Personal Health';
+      headercolor = 'var(--red-color)';
     }}
 >
 
@@ -82,7 +250,7 @@ on:inview_enter={(event) => {
 
 <div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
-	<h3>Smoking and Asthma</h3>
+	<h3>Risk Factor: Tobacco Use</h3>
 			<div class="two-column-text">
 			<p class="lede">Tobacco is one of the main risk factors for chronic respiratory disease. Here in the Lehigh Valley an estimated 17% of the population regularly smokes or vapes. This is a significant jump from the 13% average of the United States. 
 
@@ -107,6 +275,7 @@ class="healthcare-holder"
 use:inview={sectionoptions}
 on:inview_enter={(event) => {
       headertext = 'Healthcare';
+      headercolor = 'var(--red-color)';
     }}
 >
 
@@ -191,7 +360,7 @@ on:inview_enter={(event) => {
 		</div>
 	</div>
 	<div class="spec-label">
-		In the Allentown Bethlehem Easton metro area, there is only one specialist for every 100,000 patients. 
+		In the Allentown, Bethlehem, and Easton metro area, there is only one specialist for every 100,000 patients. 
 	</div>
 </div>
 
@@ -222,13 +391,14 @@ class="environment-holder"
 use:inview={sectionoptions}
 on:inview_enter={(event) => {
       headertext = 'Living Environment';
+      headercolor = 'var(--green-color)';
     }}
 >
 
 <div class="environment">
 	<div class="environment-shout standard-padding">
 		<h2>43%</h2>
-		<p>of housing stock has issues that contribute to poor health.
+		<p>of housing has issues that contribute to poor health.
 	</div>
 </div>
 
@@ -241,7 +411,7 @@ on:inview_enter={(event) => {
 			<p>As houses age, insulation settles, and leaks develop, hidden spaces become susceptible to mold. For people with chronic conditions, triggers and allergens in the home (such as dust, pests, and mold) can cause asthma and allergy symptoms. Remediation and renovation is expensive work. For many, perhaps the best course of action is to address issues as they occur in rooms most used.</p>
 
 			<p>
-				What else can be done? Laws that encourage landlords to address housing issues that impact health is one way forward. Programs that aid and incentivize propoerty owners to make much needed repairs is another. Improving the living envirnonments of the places we inhabit is doable. It's worth looking to examples like DC Healthy Housing Collaborative (DCHHS), and California Asthma Financing Workgroup.
+				What else can be done? Laws that encourage landlords to address housing issues that impact health is one way forward. Programs that aid and incentivize propoerty owners to make much needed repairs is another. Improving the living envirnonments of the places we inhabit is doable. It's worth looking to examples like the <a href="https://www.dchealthyhousingcollaborative.org/" target="_blank">DC Healthy Housing Collaborative (DCHHS)</a>, and the <a href="https://www.phi.org/thought-leadership/a-path-forward-sustainable-financing-for-asthma-education-and-home-environmental-trigger-remediation-in-california/" target="_blank">California Asthma Financing Workgroup</a>.
 			</p>
 			
 		</div>
@@ -286,7 +456,7 @@ header a {
 
 .banner-section {
   height: 100vh;
-  overflow-y: scroll;
+  overflow: hidden;
   background-image: url('/img/a-map.jpg');
   background-size:cover;
   background-position: center;
@@ -297,10 +467,28 @@ header a {
 
 .head {
 	padding-top: 7em;
-	background-image: url('/img/puff.svg');
-	background-repeat: no-repeat;
-	background-size: 8em 8em;
-	background-position: right .5em top .5em;
+	position: relative;
+}
+
+.puff-holder {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8em;
+	height: auto;
+}
+
+.puff-holder div {
+	transition: all 1s ease-in-out;
+}
+
+.goingout {
+	opacity: 0;
+	transform: scale(50) rotate(180deg);
+}
+
+.goingout svg {
+	display: none;
 }
 
 section h3 {
@@ -308,7 +496,6 @@ section h3 {
   font-size: 1.5em;
   margin-bottom: 1.4rem;
 }
-
 
 .banner-section h1 {
   display: inline !important;
