@@ -242,9 +242,9 @@ on:inview_enter={(event) => {
 >
 
 <div class="smoking">
-	<div class="smoking-shout standard-padding">
+	<div class="shout">
 		<h2>17%</h2>
-		<p>of the adult population regular smokes or vapes.
+		<p>of the adult population<br> regularly smokes or vapes.
 	</div>
 </div>
 
@@ -252,7 +252,7 @@ on:inview_enter={(event) => {
 	<div class="width-12-12-m width-12-12-i width-12-12">
 	<h3>Risk Factor: Tobacco Use</h3>
 			<div class="two-column-text">
-			<p class="lede">Tobacco is one of the main risk factors for chronic respiratory disease. Here in the Lehigh Valley an estimated 17% of the population regularly smokes or vapes. This is a significant jump from the 13% average of the United States. 
+			<p class="lede">Tobacco is one of the main risk factors for chronic respiratory disease. Here in the Lehigh Valley an estimated 17% of the population regularly smokes or vapes. This is a bit higher than the 13% average of the United States. 
 
 			<p>Smoking is unhealthy for everyone, but it is especially harmful for people with asthma. In fact, smoking is one of the most common asthma triggers. If someone ends up in the emergency room due to an asthma attack, there's a good chance that they have been smoking or vaping.</p>
 
@@ -396,9 +396,9 @@ on:inview_enter={(event) => {
 >
 
 <div class="environment">
-	<div class="environment-shout standard-padding">
+	<div class="shout">
 		<h2>43%</h2>
-		<p>of housing has issues that contribute to poor health.
+		<p>of housing has issues that<br> contribute to poor health.
 	</div>
 </div>
 
@@ -500,7 +500,7 @@ section h3 {
 .banner-section h1 {
   display: inline !important;
   line-height: 1em;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 p.lede {
@@ -530,23 +530,28 @@ p.lede {
 	align-content: center;
 }
 
-.smoking-shout {
+.shout {
+	text-align: left;
 	max-width: fit-content;
   margin-inline: auto;
   color: var(--light-grey-color);
-  text-align: center;
   font-weight: 500;
+  border: 2px solid var(--light-grey-color);
+  display: flex;
 }
 
-.smoking-shout h2 {
-	font-size: 10em;
+.shout h2 {
+	padding: 1rem;
+	font-size: 3em;
 	line-height: .85em;
-	margin-bottom: .15em;
+	margin-bottom: 0;
 	font-weight: 500;
+	border-right: 2px solid var(--light-grey-color);
 }
 
-.smoking-shout p {
-	font-size: 1.5em;
+.shout p {
+	font-size: 1em;
+	padding: 1rem;
 }
 
 .specialists-wrap {
@@ -574,7 +579,6 @@ p.lede {
 .tile {
 }
 
-
 .environment-holder {
 	
 }
@@ -589,25 +593,6 @@ p.lede {
 	align-content: center;
 }
 
-.environment-shout {
-	max-width: fit-content;
-  margin-inline: auto;
-  color: var(--light-grey-color);
-  text-align: center;
-  font-weight: 500;
-}
-
-.environment-shout h2 {
-	font-size: 10em;
-	line-height: .85em;
-	margin-bottom: .15em;
-	font-weight: 500;
-}
-
-.environment-shout p {
-	font-size: 1.5em;
-}
-
 
 .tile svg {
 	max-width: fit-content;
@@ -619,6 +604,17 @@ p.lede {
 		column-count: 2;
 		column-gap: 4vw;
 	}
+
+.shout h2 {
+	padding: .75rem 1rem 1rem 1rem;
+	font-size: 4em;
+}
+
+.shout p {
+	font-size: 1.25em;
+	padding: .75rem 1rem 1rem 1rem;
+}
+
 }
 
 @media (min-width: 48rem) and (max-width: 79.99rem) {
