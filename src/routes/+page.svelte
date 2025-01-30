@@ -2,6 +2,9 @@
 	import { onMount } from 'svelte';
   import Logo from '$components/Logo.svelte';
   import Lung from '$components/Lung.svelte';
+  import Bunny from '$components/Bunny.svelte';
+  import CCLogo from '$components/CCLogo.svelte';
+  import SCLLogo from '$components/SCLLogo.svelte';
   import Plurality from '$components/Plurality.svelte';
   import Specialists from '$components/Specialists.svelte';
   import { inview } from 'svelte-inview';
@@ -220,7 +223,7 @@ on:inview_enter={(event) => {
 
 			<p>Put into place in 1963, and subsequently updated in 1990, the Clean Air Act has proven to be a great success in improving air quality in the United States and serves as one example that points to the efficacy of interventions. But what more can be done here in the Lehigh Valley?</p>
 			
-			<p>Community, government, and individual efforts that seek to address air quality, personal health, living environments and systemic injustice can all contribute to lowering the incidence of chronic respiratory health issues such as asthma. Let's explore. 
+			<p>Community, individual, and policy level efforts that seek to address air quality, personal health, living environments and systemic injustice can all contribute to lowering the incidence of chronic respiratory health issues such as asthma. Let's explore. 
 		</div>
 
 		<div class="width-12-12-m width-6-12-i width-6-12 order-1 intro-graphic">
@@ -421,6 +424,70 @@ on:inview_enter={(event) => {
 
 </section>
 
+<section
+class="air-holder"
+use:inview={sectionoptions}
+on:inview_enter={(event) => {
+      headertext = 'Air Quality';
+      headercolor = 'var(--blue-color)';
+    }}
+>
+
+<div class="air">
+		<img src="/img/particle-scale.png" />
+</div>
+
+<div class="grid standard-padding no-gutter">
+	<div class="width-12-12-m width-12-12-i width-12-12">
+	<h3>Risk Factor: Air Quality</h3>
+			<div class="two-column-text">
+			<p class="lede">If you grew up in the Lehigh Valley before the 1970's you might remember soot on your windowsill from the prevalent use of coal in the region. Times have changed and coal is no longer the preferred choice of energy. While air pollution is no longer as visible, or tactile, as it once was, it does not mean we are in the clear.</p>
+
+			<p>The Allentown region averages 50 days out of the year at levels that are are considered "Unhealthy for Sensitive Groups" by the EPA Air Quality Index. This is largely due to high levels of 2.5µm particluate matter related to vehicle emissions that tends to swirl about the valley when certain meteorological conditions arise. Unhealthy air quality is a contributor to poor respiratory health and on really bad days can even trigger an episode amongst those who suffer the most.</p>
+
+			<p>What can be done? Incentives that encourage the use of and investment in public transport, strengthening and enforcement of laws prohibiting idling vehicles, encouraging the adoption of electric vehicles, are all proven to reduce the amount of emmisions related particulates. </p>
+
+			<p>Additionally, investment in alternative transportation like trails for cyclists and walkers would be a double win for health and air. And lastly, and though it may sound far-fetched (the technology is just around the corner): municipal scale air purification systems could be installed in the built environment of areas with consistently high levels of particulate material.</p>
+		</div>
+
+		</div>
+</div>
+
+</section>
+
+<div id="footer" class="standard-padding">
+    <div class="grid">
+
+    	<div class="width-12-12-m width-8-12-i width-8-12">
+      	<p>
+            <a
+              aria-label="Creative Commons"
+              target="_blank"
+              href="/"
+              rel="noopener noreferrer"
+              > <CCLogo /></a> 2025 Kevin Lahoda. </p>
+
+              <p>Allentown Breathes is a speculative project utilizing inquiry based design for environmental and public health.
+          </p>
+        <p>Please be in touch. klahoda@gmail.com</p>
+      </div>
+
+      <div class="width-12-12-m width-4-12-i width-4-12">
+
+        <div class="stuff">
+            <a href="https://www.lehigh.edu/" target="_blank" title="Kevin Lahoda">
+            <Bunny />
+            </a>
+            
+            <a href="https://aad.lehigh.edu/" target="_blank" title="Small Cities Lab">
+            <SCLLogo />
+            </a>
+        </div>
+
+      </div>
+
+    </div>
+</div>
 
 <style>
 
@@ -455,7 +522,7 @@ header a {
 }
 
 .banner-section {
-  height: 100vh;
+  aspect-ratio: 1;
   overflow: hidden;
   background-image: url('/img/a-map.jpg');
   background-size:cover;
@@ -526,7 +593,7 @@ p.lede {
   background-size:cover;
   background-position: center;
 	width: 100vw;
-	height: calc(100vh - 3rem);
+	aspect-ratio: 1;
 	align-content: center;
 }
 
@@ -584,12 +651,11 @@ p.lede {
 }
 
 .environment {
-	background-color: var(--red-color);
 	background-image: url('/img/bethlehem-view.jpg');
   background-size:cover;
   background-position: center;
 	width: 100vw;
-	height: calc(100vh - 3rem);
+	aspect-ratio: 1;
 	align-content: center;
 }
 
@@ -599,20 +665,104 @@ p.lede {
   margin-inline: auto;
 }
 
+.air-holder {
+	
+}
+
+.air {
+	background-color: var(--blue-color);
+	width: 100vw;
+	aspect-ratio: 1;
+	align-content: center;
+}
+
+.air img {  
+	width: 100%;
+	height: auto;      
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+  #footer {
+    margin-top: auto;
+    font-size: 0.85em;
+    overflow: hidden;
+    background: var(--light-grey-color);
+    color: var(--black-color);
+    letter-spacing: 1px;
+  }
+
+  #footer ::selection {
+    color: var(--lighter-grey-color);
+    background: var(--black-color);
+  }
+
+  #footer p:first-child {
+    margin-top: 0;
+  }
+
+  #footer p:last-child {
+    margin-bottom: 0;
+  }
+
+  #footer a {
+    color: var(--black-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  #footer a:hover {
+    color: var(--grey-color);
+  }
+
+  #footer .stuff {
+  	height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  #footer .stuff a {
+    margin-right: 2em;
+  }
+
+
 @media (min-width: 48rem) {
+
+	.banner-section {
+		aspect-ratio: auto;
+  	height: 100vh;
+	}
+
+	.smoking, .environment, .air {
+	aspect-ratio: auto;
+	height: calc(100vh - 3rem);
+}
+
 	.two-column-text {
 		column-count: 2;
 		column-gap: 4vw;
 	}
 
-.shout h2 {
-	padding: .75rem 1rem 1rem 1rem;
-	font-size: 4em;
-}
+	.shout h2 {
+		padding: .75rem 1rem 1rem 1rem;
+		font-size: 4em;
+	}
 
-.shout p {
-	font-size: 1.25em;
-	padding: .75rem 1rem 1rem 1rem;
+	.shout p {
+		font-size: 1.25em;
+		padding: .75rem 1rem 1rem 1rem;
+	}
+
+	.air img {  
+		height: 100%;
+		width: auto;      
+	}
+
+	header a {
+	width: 3rem;
+	height: 3rem;
 }
 
 }
@@ -627,6 +777,10 @@ p.lede {
 	.banner-section h1 {
   		font-size: 6em;
 	}
+	header a {
+	width: 4rem;
+	height: 4rem;
+}
 }
 
 </style>

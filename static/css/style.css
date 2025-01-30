@@ -210,7 +210,7 @@ a.more:after {
 }
 
 .standard-padding {
-  padding: 4em 3em;
+  padding: 3em 1em;
 }
 
 ::selection {
@@ -220,9 +220,17 @@ a.more:after {
 
 @media (min-width: 48rem) and (max-width: 79.99rem) {
 
+.standard-padding {
+  padding: 3em 2em;
+}
+
 }
 
 @media (min-width: 80rem) {
+
+  .standard-padding {
+  padding: 4em 3em;
+}
 
 }
 
