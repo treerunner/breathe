@@ -27,6 +27,7 @@
   let headercolor = '';
   const options = {threshold: '.1'};
   const sectionoptions = {threshold: '.3'};  
+
 </script>
 
 <header class="showheader" class:showheader>
@@ -404,6 +405,7 @@ on:inview_enter={(event) => {
 		<p>of housing has issues that<br> contribute to poor health.
 	</div>
 </div>
+<div class="citation">Bethlehem and South Bethlehem, Pa. Looking North East. <a target="_blank" href="https://www.loc.gov/item/98508515/">Schwartz & Weaver, c1877</a>.</div>
 
 <div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
@@ -435,7 +437,17 @@ on:inview_enter={(event) => {
 
 <div class="air">
 		<img src="/img/particle-scale.png" />
+		<div class="ns">
+			<iframe
+			  id="inlineFrameExample"
+			  title="Inline Frame Example"
+			  width="120%"
+			  height="120%"
+			  src="https://earth.nullschool.net/#current/particulates/surface/level/overlay=pm2.5/orthographic=-78.05,39.02,5179">
+			</iframe>
+		</div>
 </div>
+<div class="citation">Wind + Particulate Matter &lt; 2.5µm @ surface. <a target="_blank" href="https://earth.nullschool.net/">earth.nullschool.net</a>.</div>
 
 <div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
@@ -458,7 +470,7 @@ on:inview_enter={(event) => {
 <div id="footer" class="standard-padding">
     <div class="grid">
 
-    	<div class="width-12-12-m width-8-12-i width-8-12">
+    	<div class="width-12-12-m width-6-12-i width-6-12">
       	<p>
             <a
               aria-label="Creative Commons"
@@ -467,19 +479,19 @@ on:inview_enter={(event) => {
               rel="noopener noreferrer"
               > <CCLogo /></a> 2025 Kevin Lahoda. </p>
 
-              <p>Allentown Breathes is a speculative project utilizing inquiry based design for environmental and public health.
+              <p>Allentown Breathes is a exploratory project investigating inquiry based design for environmental and public health.
           </p>
-        <p>Please be in touch. klahoda@gmail.com</p>
+        <p>Be in touch. klahoda@gmail.com</p>
       </div>
 
-      <div class="width-12-12-m width-4-12-i width-4-12">
+      <div class="width-12-12-m width-6-12-i width-6-12">
 
         <div class="stuff">
-            <a href="https://www.lehigh.edu/" target="_blank" title="Kevin Lahoda">
+            <a href="https://kevinlahoda.com/" target="_blank" title="Kevin Lahoda">
             <Bunny />
             </a>
             
-            <a href="https://aad.lehigh.edu/" target="_blank" title="Small Cities Lab">
+            <a href="https://smallcitieslab.org/" target="_blank" title="Small Cities Lab">
             <SCLLogo />
             </a>
         </div>
@@ -670,10 +682,10 @@ p.lede {
 }
 
 .air {
-	background-color: var(--blue-color);
 	width: 100vw;
 	aspect-ratio: 1;
 	align-content: center;
+	position: relative;
 }
 
 .air img {  
@@ -682,6 +694,40 @@ p.lede {
   display:block;
   margin-left:auto;
   margin-right:auto;
+}
+
+.air .ns {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: var(--blue-color);
+	overflow: hidden;
+}
+
+.air .ns iframe {
+	margin-top: -2px;
+	margin-left: -2px;
+	mix-blend-mode: overlay;
+	filter: grayscale(80%);
+	opacity: .6;
+}
+
+.citation {
+	color: var(--black-color);
+	background-color: var(--lighter-grey-color);
+	text-align: right;
+	font-size: .75em;
+	padding: .25em .5em;
+}
+
+.citation a {
+	color: var(--black-color);
+}
+.citation a:hover {
+	text-decoration: none;
 }
 
   #footer {
