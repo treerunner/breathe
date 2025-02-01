@@ -220,9 +220,9 @@ on:inview_enter={(event) => {
 
 		<div class="width-12-12-m width-6-12-i width-6-12 order-2 intro-text">
 			<h3>Let's Not Be Number 1</h3>
-			<p class="lede">The Lehigh Valley has been referred to as the number one asthma capital of the United States. There are a number of conditions that can make a community vulnerable to chronic disease. Inadequate access to care, infrastructure, environment, biology, behavior, and systemic injustice all contribute. These issues are not insurmountable. 
+			<p class="lede">The Lehigh Valley has been referred to as the number one asthma capital of the United States. There are a number of conditions that can make a community vulnerable to chronic disease. Inadequate access to care, infrastructural issues, environment, biology, behavior, and systemic injustice all contribute. These issues are not insurmountable. 
 
-			<p>Put into place in 1963, and subsequently updated in 1990, the Clean Air Act has proven to be a great success in improving air quality in the United States and serves as one example that points to the efficacy of interventions. But what more can be done here in the Lehigh Valley?</p>
+			<p>Enacted in 1963 and subsequently updated in 1990, the <a href="https://www.epa.gov/laws-regulations/summary-clean-air-act" target="_blank">Clean Air Act</a> has proven to be a great success in improving air quality in the United States and serves as one example that points to the efficacy of interventions. But what else can be done here in the Lehigh Valley?</p>
 			
 			<p>Community, individual, and policy level efforts that seek to address air quality, personal health, living environments and systemic injustice can all contribute to lowering the incidence of chronic respiratory health issues such as asthma. Let's explore. 
 		</div>
@@ -258,13 +258,13 @@ on:inview_enter={(event) => {
 			<div class="two-column-text">
 			<p class="lede">Tobacco is one of the main risk factors for chronic respiratory disease. Here in the Lehigh Valley an estimated 17% of the population regularly smokes or vapes. This is a bit higher than the 13% average of the United States. 
 
-			<p>Smoking is unhealthy for everyone, but it is especially harmful for people with asthma. In fact, smoking is one of the most common asthma triggers. If someone ends up in the emergency room due to an asthma attack, there's a good chance that they have been smoking or vaping.</p>
+			<p>Smoking is unhealthy for everyone, but it is especially harmful for people with asthma. In fact, smoking is one of the most common asthma triggers. If someone ends up in the emergency room due to an asthma attack, there's a good chance that they have been smoking or vaping. In fact, here in the Lehigh Valley, 1 out of 3 ER visits include some element of issues connected to respiratory health.</p>
 
-			<p>Tobacco smoke introduces thousands of harmful chemicals into the lungs, many of which are irritants. For people with asthma, these substances worsen airway inflammation and increase mucus production. This can cause symptoms of coughing, wheezing and shortness of breath. It can trigger more frequent and severe asthma attacks. Smoking also weakens lung function over time, making it harder for people with asthma to manage their symptoms effectively.</p>
+			<p>Tobacco smoke introduces thousands of harmful chemicals into the lungs, many of which are irritants. For people with asthma, these substances inflame airways and increase mucus production. This can cause symptoms of coughing, wheezing and shortness of breath. It can trigger more frequent and severe asthma attacks. Smoking also weakens the capacity of lungs to do their job over time, making it harder for people to manage their symptoms effectively.</p>
 
-			<p>Some smokers have turned to vaping to help them quit. There is now a growing body of research suggesting that vaping is also harmful to lung health. However, vaping is a relatively new technology and scientists are still researching how safe it is to our health. More studies are beginning to show that vaping can increase inflammation in the airways and cause breathing difficulties which can intensify asthma symptoms and trigger asthma attacks.</p>
+			<p>Some smokers have turned to vaping to help them quit. However, there is now a growing body of research suggesting that vaping is also harmful to lung health. Vaping is a relatively new technology and scientists are still researching how safe it is to human health. More studies are beginning to show that vaping can increase inflammation in the airways and can cause breathing difficulties which intensify asthma symptoms and trigger asthma attacks.</p>
 
-			<p>Avoiding tobacco products before it comes a problem is one way to address this issue. Workplace rules and public policy works to help people stay away from tobacco. Making moves as an individual to quit the use of tobacco products is another way forward. Easier said than done, but it can be done –and help is available.</p>
+			<p>Avoiding tobacco products before it comes a problem is one way to address this issue. Workplace rules and public policy contributes to helping people stay away from tobacco. Making moves as an individual to quit the use of tobacco products is another way forward. Easier said than done, but it can be done –and <a href="https://www.lvhn.org/medical-services/tobacco-treatment-program" target="_blank">help</a> is <a href="https://www.slhn.org/wellnow/substance-misuse/tobacco-cessation-program" target="_blank">available</a>.</p>
 			
 		</div>
 
@@ -372,16 +372,15 @@ on:inview_enter={(event) => {
 	<div class="width-12-12-m width-12-12-i width-12-12">
 	<h3>Risk Factor: Access to Specialitsts</h3>
 			<div class="two-column-text">
-				<p class="lede">Living in an area where there are fewer specialists is frustrating for those who need care. Booking appointments months in advance, traveling long distances, and giving up altogether are common. Lack of access, and needing to take time in order to travel when appointments become available is a burden on personal finances and time, especially when frequent trips are needed, and especially when any additional cost rocks the balance of the household.</p>
+				<p class="lede">Living in an area where there are fewer specialists is frustrating for those who need care. Booking appointments months in advance, traveling long distances, and giving up altogether are common. Lack of access, and needing to take time in order to travel when appointments become available is a burden on personal finances and time, especially when frequent trips are needed, and especially when any additional costs can rock the balance of the household.</p>
 
 				<p>Successful management of chronic respiratory health issues requires a team effort between the patient
-				and their health care providers. Someone with persistent asthma might need to be in the care of a specialist. Pulmonologists, allergists, and immunologists, for example, can provide specialized care for people with asthma and may have more experience
-				treating patients with severe asthma or allergic asthma than a primary care physician.</p>
+				and their health care providers. Someone with persistent asthma should be in the care of a specialist. Pulmonologists, allergists, and immunologists can provide specialized care for people with asthma and may have more experience treating patients with severe asthma or allergic asthma than a primary care physician.</p>
 				
 				<p>Access to appropriate medical care is dependent upon different factors, including socioeconomic
 				status and insurance status. The lack of availability of nearby asthma specialists leads to poor asthma outcomes.</p>
 
-				<p>What can be done? Finding ways to bring care to the neighborhoods that need it is one way forward. Care teams that visit community centers, schools, assisted living facilities can help. Additionally, addressing healthcare infrastructure is hugely important and takes courage.</p>
+				<p>What can be done? Finding ways to bring care to the neighborhoods that need it is one way forward. Care teams that visit community centers, schools, assisted living facilities can help. Additionally, addressing sytemic healthcare issues is hugely important –and takes courage at every level.</p>
 			</div>
 
 		</div>
@@ -411,12 +410,12 @@ on:inview_enter={(event) => {
 	<div class="width-12-12-m width-12-12-i width-12-12">
 	<h3>Risk Factor: Housing Concerns</h3>
 			<div class="two-column-text">
-			<p class="lede">Much of the housing stock in the Allentown, Bethlehem and Easton metro area was developed for factory worker families of the early to mid 20th century. While it can be said that many of these houses were constructed with a pride of craft and longevity in mind, there are concerns related to old infrastructure. Leaks, poor or dirty ventilation, peeling paint, clunky old furnaces and oil burners all contribute to poor living conditions.</p>
+			<p class="lede">Much of the housing stock in the Allentown, Bethlehem and Easton metro area was developed for factory worker families of the early to mid 20th century. While it can be said that many of these houses were constructed with a pride of craft and longevity in mind, there are concerns related to old infrastructure. Leaks, poor or dirty ventilation, peeling paint, clunky old furnaces, and overdue maintenance all contribute to poor living conditions.</p>
 
-			<p>As houses age, insulation settles, and leaks develop, hidden spaces become susceptible to mold. For people with chronic conditions, triggers and allergens in the home (such as dust, pests, and mold) can cause asthma and allergy symptoms. Remediation and renovation is expensive work. For many, perhaps the best course of action is to address issues as they occur in rooms most used.</p>
+			<p>As houses age, insulation settles, leaks develop, and hidden spaces become susceptible to mold. For people with chronic conditions, triggers and allergens in the home (such as dust, pests, and mold) can cause asthma and allergy symptoms. Remediation and renovation is expensive work. For many, perhaps the best course of action is to address issues as they occur in rooms most used.</p>
 
 			<p>
-				What else can be done? Laws that encourage landlords to address housing issues that impact health is one way forward. Programs that aid and incentivize propoerty owners to make much needed repairs is another. Improving the living envirnonments of the places we inhabit is doable. It's worth looking to examples like the <a href="https://www.dchealthyhousingcollaborative.org/" target="_blank">DC Healthy Housing Collaborative (DCHHS)</a>, and the <a href="https://www.phi.org/thought-leadership/a-path-forward-sustainable-financing-for-asthma-education-and-home-environmental-trigger-remediation-in-california/" target="_blank">California Asthma Financing Workgroup</a>.
+				What else can be done? Laws that encourage landlords to address housing issues that impact health is one way forward. Programs that aid and incentivize property owners to make much needed repairs is another. Improving the living envirnonments of the places we inhabit is doable. It's worth looking to examples like the <a href="https://www.dchealthyhousingcollaborative.org/" target="_blank">DC Healthy Housing Collaborative (DCHHS)</a>, and the <a href="https://www.phi.org/thought-leadership/a-path-forward-sustainable-financing-for-asthma-education-and-home-environmental-trigger-remediation-in-california/" target="_blank">California Asthma Financing Workgroup</a>.
 			</p>
 			
 		</div>
@@ -453,13 +452,13 @@ on:inview_enter={(event) => {
 	<div class="width-12-12-m width-12-12-i width-12-12">
 	<h3>Risk Factor: Air Quality</h3>
 			<div class="two-column-text">
-			<p class="lede">If you grew up in the Lehigh Valley before the 1970's you might remember soot on your windowsill from the prevalent use of coal in the region. Times have changed and coal is no longer the preferred choice of energy. While air pollution is no longer as visible, or tactile, as it once was, it does not mean we are in the clear.</p>
+			<p class="lede">If you grew up in the Lehigh Valley before the 1970's you might remember soot on your windowsill from the prevalent use of coal in the region. Times have changed and today coal is no longer the preferred choice of energy. While air pollution is no longer as visible, or tactile, as it once was, it does not mean we are in the clear.</p>
 
-			<p>The Allentown region averages 50 days out of the year at levels that are are considered "Unhealthy for Sensitive Groups" by the EPA Air Quality Index. This is largely due to high levels of 2.5µm particluate matter related to vehicle emissions that tends to swirl about the valley when certain meteorological conditions arise. Unhealthy air quality is a contributor to poor respiratory health and on really bad days can even trigger an episode amongst those who suffer the most.</p>
+			<p>An averagre of 50 days out of the year in the Allentown region are considered "Unhealthy for Sensitive Groups" by the <a href="https://www.airnow.gov/aqi/aqi-basics/" target="_blank">EPA Air Quality Index</a>. This is largely due to high levels of 2.5µm particluate matter related to vehicle emissions that tends to swirl about the valley when certain meteorological conditions arise. Unhealthy air quality is a contributor to poor respiratory health and on really bad days can trigger an episode amongst those who suffer the most.</p>
 
-			<p>What can be done? Incentives that encourage the use of and investment in public transport, strengthening and enforcement of laws prohibiting idling vehicles, encouraging the adoption of electric vehicles, are all proven to reduce the amount of emmisions related particulates. </p>
+			<p>What can be done? Incentives that encourage the use of and investment in public transport, strengthening and enforcement of laws prohibiting idling vehicles, and encouraging the adoption of electric vehicles and other forms of alternative transporation are all proven to reduce the amount of emmisions related particulates. </p>
 
-			<p>Additionally, investment in alternative transportation like trails for cyclists and walkers would be a double win for health and air. And lastly, and though it may sound far-fetched (the technology is just around the corner): municipal scale air purification systems could be installed in the built environment of areas with consistently high levels of particulate material.</p>
+			<p>Additionally, investment in more robust trails and paths for cyclists and walkers would be a double win for health and air. Lastly, and though it may sound far-fetched (the technology is just around the corner): municipal scale air purification systems could be installed in the built environment of areas with consistently high levels of particulate material.</p>
 		</div>
 
 		</div>
