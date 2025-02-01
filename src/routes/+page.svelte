@@ -222,7 +222,7 @@ on:inview_enter={(event) => {
 			<h3>Let's Not Be Number 1</h3>
 			<p class="lede">The Lehigh Valley has been referred to as the number one asthma capital of the United States. There are a number of conditions that can make a community vulnerable to chronic disease. Inadequate access to care, infrastructural issues, environment, biology, behavior, and systemic injustice all contribute. These issues are not insurmountable. 
 
-			<p>Enacted in 1963 and subsequently updated in 1990, the <a href="https://www.epa.gov/laws-regulations/summary-clean-air-act" target="_blank">Clean Air Act</a> has proven to be a great success in improving air quality in the United States and serves as one example that points to the efficacy of interventions. But what else can be done here in the Lehigh Valley?</p>
+			<p>Enacted in 1963 and subsequently updated in 1990, the <a href="https://www.epa.gov/laws-regulations/summary-clean-air-act" target="_blank">Clean Air Act</a> has proven to be a great success in improving air quality in the United States that serves as an example pointing to the efficacy of interventions. But what else can be done here in the Lehigh Valley?</p>
 			
 			<p>Community, individual, and policy level efforts that seek to address air quality, personal health, living environments and systemic injustice can all contribute to lowering the incidence of chronic respiratory health issues such as asthma. Let's explore. 
 		</div>
