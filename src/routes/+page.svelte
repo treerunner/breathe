@@ -254,7 +254,8 @@ on:inview_enter={(event) => {
 
 <div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
-	<h3>Risk Factor: Tobacco Use</h3>
+	<h4>Risk Factor:</h4>
+  <h3>Tobacco Use</h3>
 			<div class="two-column-text">
 			<p class="lede">Tobacco is one of the main risk factors for chronic respiratory disease. Here in the Lehigh Valley an estimated 17% of the population regularly smokes or vapes. This is a bit higher than the 13% average of the United States. 
 
@@ -370,7 +371,8 @@ on:inview_enter={(event) => {
 
 	<div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
-	<h3>Risk Factor: Access to Specialitsts</h3>
+  <h4>Risk Factor:</h4>
+	<h3>Access to Specialitsts</h3>
 			<div class="two-column-text">
 				<p class="lede">Living in an area where there are fewer specialists is frustrating for those who need care. Booking appointments months in advance, traveling long distances, and giving up altogether are common. Lack of access, and needing to take time in order to travel when appointments become available is a burden on personal finances and time, especially when frequent trips are needed, and especially when any additional costs can rock the balance of the household.</p>
 
@@ -408,7 +410,8 @@ on:inview_enter={(event) => {
 
 <div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
-	<h3>Risk Factor: Housing Concerns</h3>
+  <h4>Risk Factor:</h4>
+	<h3>Housing Concerns</h3>
 			<div class="two-column-text">
 			<p class="lede">Much of the housing stock in the Allentown, Bethlehem and Easton metro area was developed for factory worker families of the early to mid 20th century. While it can be said that many of these houses were constructed with a pride of craft and longevity in mind, there are concerns related to old infrastructure. Leaks, poor or dirty ventilation, peeling paint, clunky old furnaces, and overdue maintenance all contribute to poor living conditions.</p>
 
@@ -450,7 +453,8 @@ on:inview_enter={(event) => {
 
 <div class="grid standard-padding no-gutter">
 	<div class="width-12-12-m width-12-12-i width-12-12">
-	<h3>Risk Factor: Air Quality</h3>
+	<h4>Risk Factor:</h4>
+  <h3>Air Quality</h3>
 			<div class="two-column-text">
 			<p class="lede">If you grew up in the Lehigh Valley before the 1970's you might remember soot on your windowsill from the prevalent use of coal in the region. Times have changed and today coal is no longer the preferred choice of energy. While air pollution is no longer as visible, or tactile, as it once was, it does not mean we are in the clear.</p>
 
@@ -478,7 +482,7 @@ on:inview_enter={(event) => {
               rel="noopener noreferrer"
               > <CCLogo /></a> 2025 Kevin Lahoda. </p>
 
-              <p>Allentown Breathes is a exploratory project investigating inquiry based design for environmental and public health.
+              <p>Allentown Breathes is an exploratory project investigating inquiry based design for environmental and public health connected to an <a href="https://www.smallcitieslab.org/projects/lehigh-valley-promise-equity-fellowship" target="_blank">initiative</a> at the Lehigh University Small Cities Lab.
           </p>
         <p>Be in touch. klahoda@gmail.com</p>
       </div>
@@ -581,6 +585,14 @@ section h3 {
   font-size: 4em;
 }
 
+h4 {
+  display: inline-block;
+  background-color: var(--black-color);
+  color: var(--lighter-grey-color);
+  font-size: .85em;
+  padding: 0 .25em;
+}
+
 p.lede {
 	font-weight: 500;
 }
@@ -594,8 +606,8 @@ p.lede {
   margin-inline: auto;
 }
 
-.smoking-holder {
-	
+.smoking-holder h4, .healthcare-holder h4 {
+  background-color: var(--red-color);
 }
 
 .smoking {
@@ -657,8 +669,8 @@ p.lede {
 .tile {
 }
 
-.environment-holder {
-	
+.environment-holder h4 {
+	background-color: var(--green-color);
 }
 
 .environment {
@@ -676,8 +688,8 @@ p.lede {
   margin-inline: auto;
 }
 
-.air-holder {
-	
+.air-holder h4 {
+	background-color: var(--blue-color);
 }
 
 .air {
@@ -759,6 +771,10 @@ p.lede {
 
   #footer a:hover {
     color: var(--grey-color);
+  }
+
+  #footer p a {
+    text-decoration: underline;
   }
 
   #footer .stuff {
