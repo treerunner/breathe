@@ -259,13 +259,13 @@ on:inview_enter={(event) => {
 			<div class="two-column-text">
 			<p class="lede">Tobacco is one of the main risk factors for chronic respiratory disease. Here in the Lehigh Valley an estimated 17% of the population regularly smokes or vapes. This is a bit higher than the 13% average of the United States. 
 
-			<p>Smoking is unhealthy for everyone, but it is especially harmful for people with asthma. In fact, smoking is one of the most common asthma triggers. If someone ends up in the emergency room due to an asthma attack, there's a good chance that they have been smoking or vaping. In fact, here in the Lehigh Valley, 1 out of 3 ER visits include some element of issues connected to respiratory health.</p>
+			<p>Smoking is unhealthy for everyone, but it is especially harmful for people with asthma. In fact, smoking is one of the most common asthma triggers. If someone ends up in the emergency room due to an asthma attack, there's a good chance that they have been smoking or vaping. Here in the Lehigh Valley, 1 out of 3 ER visits include some element of issues connected to respiratory health.</p>
 
 			<p>Tobacco smoke introduces thousands of harmful chemicals into the lungs, many of which are irritants. For people with asthma, these substances inflame airways and increase mucus production. This can cause symptoms of coughing, wheezing and shortness of breath. It can trigger more frequent and severe asthma attacks. Smoking also weakens the capacity of lungs to do their job over time, making it harder for people to manage their symptoms effectively.</p>
 
 			<p>Some smokers have turned to vaping to help them quit. However, there is now a growing body of research suggesting that vaping is also harmful to lung health. Vaping is a relatively new technology and scientists are still researching how safe it is to human health. More studies are beginning to show that vaping can increase inflammation in the airways and can cause breathing difficulties which intensify asthma symptoms and trigger asthma attacks.</p>
 
-			<p>Avoiding tobacco products before it comes a problem is one way to address this issue. Workplace rules and public policy contributes to helping people stay away from tobacco. Making moves as an individual to quit the use of tobacco products is another way forward. Easier said than done, but it can be done –and <a href="https://www.lvhn.org/medical-services/tobacco-treatment-program" target="_blank">help</a> is <a href="https://www.slhn.org/wellnow/substance-misuse/tobacco-cessation-program" target="_blank">available</a>.</p>
+			<p>Avoiding tobacco products altogether before it becomes a problem is one way to address this issue. Workplace rules and public policy contributes to helping people stay away from tobacco. Making moves as an individual to quit the use of tobacco products is another way forward. Easier said than done, but it can be done –and <a href="https://www.lvhn.org/medical-services/tobacco-treatment-program" target="_blank">help</a> is <a href="https://www.slhn.org/wellnow/substance-misuse/tobacco-cessation-program" target="_blank">available</a>.</p>
 			
 		</div>
 
